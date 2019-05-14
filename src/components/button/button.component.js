@@ -15,9 +15,7 @@ export const Button =({ buttonText, iconName, buttonStyles,buttonTextStyles,next
 
       {iconName && <View style={styles.iconContainer}>
         <TouchableOpacity testID={buttontestID} style={[styles.iconButtonItem,{...buttonStyles}]} onPress={() => navigation.navigate(nextScreen)}>
-          <View style={styles.iconButtonElement}>
-            <Icon name={iconName} size={25} color='#0071BF' />
-          </View>
+          <Icon name={iconName} size={25} color='#0071BF' />
         </TouchableOpacity>
       </View>}  
             

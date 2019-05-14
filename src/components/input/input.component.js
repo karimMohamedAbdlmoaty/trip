@@ -3,7 +3,7 @@ import { View,TextInput} from 'react-native';
 import {styles} from './input.style';
 import Icon from 'react-native-vector-icons/Ionicons';
 
-export const Input =({iconName, placeHolderText ,testIdValue }) => {
+export const Input =({iconName, placeHolderText ,testIdValue , inputStyles }) => {
   return(
     <View style={[styles.container]}>
       <View style={styles.field}>

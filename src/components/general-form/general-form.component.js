@@ -3,16 +3,16 @@ import {View} from 'react-native';
 import {Input} from '../input';
 import { styles } from './general-form.style';
 
-export const GeneralForm = ({name , mail ,password}) => {
+export const GeneralForm = ({name , mail ,password , general , generalParts}) => {
   return (
     <View style={styles.container}>
       {name && <Input
-        placeHolderText="Full name"
+        placeHolderText="First Name"
         iconName='ios-mail'
       />
       }
       {name && <Input
-        placeHolderText="Full name"
+        placeHolderText="Last Name"
         iconName='ios-mail'
       />
       }
@@ -24,9 +24,13 @@ export const GeneralForm = ({name , mail ,password}) => {
 
       {password && <Input testIdValue="password-input"
         placeHolderText="Password"
-        iconName='ios-lock'
+        iconName='md-lock'
       />}
 
+      {general && <Input testIdValue="password-input"
+        placeHolderText={generalParts.placeHolderText}
+        iconName={generalParts.iconName}
+      />}
 
     </View>
         

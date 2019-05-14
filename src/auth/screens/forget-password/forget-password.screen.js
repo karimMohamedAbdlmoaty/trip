@@ -26,7 +26,7 @@ const ForgetPasswordComponent= ({navigation}) => {
           nextScreen="Login" 
           navigation={navigation}
           buttontestID=''
-          iconName='ios-arrow-back'
+          iconName='md-arrow-back'
         />
       </View>
       
@@ -52,7 +52,7 @@ const ForgetPasswordComponent= ({navigation}) => {
           buttonStyles={resetLinkButtonStyles} 
           buttonTextStyles={resetLinkButtonTextStyles} 
           buttonText="SEND RESET LINK" 
-          nextScreen="" 
+          nextScreen="ConfirmPassword" 
           navigation={navigation}
           buttontestID=''
         />

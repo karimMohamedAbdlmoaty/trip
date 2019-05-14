@@ -7,6 +7,8 @@ import {ForgetPassword} from './src/auth/screens/forget-password/forget-password
 import {ConfirmPassword} from './src/auth/screens/confirm-password/confirm-password.screen';
 import {ResetPassword} from './src/auth/screens/reset-password/reset-password.screen';
 import RepoPage from './src/repos/screens/repo-page/repo-page.screen';
+import {ChooseLanguage} from './src/auth/screens/choose-language/choose-language.screen';
+
 
 const TabNavigation = createTabNavigator({
   Home:{
@@ -27,6 +29,13 @@ const TabNavigation = createTabNavigator({
 
 const MainNavigator = createStackNavigator(
   {
+    ChooseLanguage:{
+      screen: ChooseLanguage,
+      navigationOptions: {
+        title: 'ChooseLanguage',
+      },
+    },
+
     Landing:{
       screen: Landing,
       navigationOptions: {

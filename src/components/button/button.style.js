@@ -31,22 +31,15 @@ export const styles = StyleSheet.create({
     marginLeft:20,
     marginTop:20,
     paddingLeft: 0,
-    backgroundColor:'red',
 
   },
   iconButtonItem:{
     flex:1,
     justifyContent:'center',
-    alignItems:'center',
-    backgroundColor:'#4CAE51',
     borderBottomLeftRadius: 6,
     borderBottomRightRadius: 6,
     borderTopLeftRadius: 6,
     borderTopRightRadius: 6,
-  },
-  iconButtonElement:{
-    backgroundColor:'blue',
-    marginLeft: 0
   },
   butticonButtonElementonText:{
     fontSize:20,

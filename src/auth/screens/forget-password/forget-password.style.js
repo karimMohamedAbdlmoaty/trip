@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   instructionsBody:{
+    color:'#5F5B5B',
     width:335,
     height:50,
     marginRight:20,
