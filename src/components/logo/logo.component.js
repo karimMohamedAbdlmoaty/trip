@@ -7,9 +7,9 @@ export const Logo =() => {
   return(
     <View style={styles.container}>
 
-      <Image
+      {/* <Image
         source={require('../../assets/images/logo.png')}
-      />
+      /> */}
 
     </View>
   );
