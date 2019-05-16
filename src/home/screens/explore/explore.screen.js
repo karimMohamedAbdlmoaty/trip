@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import { Text,View} from 'react-native';
-import { styles } from './home.styles';
+import { styles } from './explore.styles';
 
 
-export class Home extends Component {
+export class Explore extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text testID='home-page' style={{marginTop:20}} >Home screen</Text>
+        <Text testID='home-page' style={{marginTop:20}} >Explore screen</Text>
       </View>
     );
   }

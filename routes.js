@@ -1,27 +1,37 @@
 import { createStackNavigator ,createTabNavigator} from 'react-navigation';
-import {Home} from './src/home/screens/home/home.screen';
+// import {Home} from './src/home/screens/home/home.screen';
+// import RepoPage from './src/repos/screens/repo-page/repo-page.screen';
 import {Landing} from './src/auth/screens/landing/landing.screen';
 import {Login} from './src/auth/screens/login/login.screen';
 import {Register} from './src/auth/screens/register/register.screen';
 import {ForgetPassword} from './src/auth/screens/forget-password/forget-password.screen';
 import {ConfirmPassword} from './src/auth/screens/confirm-password/confirm-password.screen';
 import {ResetPassword} from './src/auth/screens/reset-password/reset-password.screen';
-import RepoPage from './src/repos/screens/repo-page/repo-page.screen';
 import {ChooseLanguage} from './src/auth/screens/choose-language/choose-language.screen';
-
+import {MyPlans} from './src/home/screens/my-plans/my-plans.screen';
+import {Explore} from './src/home/screens/explore/explore.screen';
+import {Account} from './src/home/screens/account/account.screen';
+import {AuthOptions} from './src/auth/screens/auth-options/auth-options.screen';
 
 const TabNavigation = createTabNavigator({
-  Home:{
-    screen: Home,
+  MyPlans:{
+    screen: MyPlans,
     navigationOptions: {
-      title: 'Home',
+      title: 'MyPlans',
     },
   },
 
-  RepoPage:{
-    screen: RepoPage,
+  Explore:{
+    screen: Explore,
     navigationOptions: {
-      title: 'RepoPage',
+      title: 'Explore',
+    },
+  },
+
+  Account:{
+    screen: Account,
+    navigationOptions: {
+      title: 'Account',
     },
   },
 
@@ -47,6 +57,13 @@ const MainNavigator = createStackNavigator(
       screen: TabNavigation,
       navigationOptions: {
         title: 'TabNavigation',
+      },
+    },
+
+    AuthOptions:{
+      screen: AuthOptions,
+      navigationOptions: {
+        title: 'AuthOptions',
       },
     },
 

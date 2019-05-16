@@ -1,5 +1,5 @@
 import React from 'react';
-import { View , Text ,FlatList } from 'react-native';
+import { View , Text ,FlatList,TouchableOpacity } from 'react-native';
 import { styles } from './choose-language.style';
 import LinearGradient from 'react-native-linear-gradient';
 import Turkey from '../../../assets/images/Turkey.svg';
@@ -30,53 +30,53 @@ export const ChooseLanguage= ({navigation}) => {
             renderItem={({item}) => 
               <View style={styles.forHorizontalMargin}>
 
-                <View style={styles.flagcell}>
+                <TouchableOpacity style={styles.flagcell} onPress={() => navigation.navigate('TabNavigation')}>
                   <View style={styles.flagLayout}>
                     <Turkey style={styles.flagBody} />
                   </View>
-                </View>
+                </TouchableOpacity>
                 
-                <View style={styles.flagcell}>
+                <TouchableOpacity style={styles.flagcell} onPress={() => navigation.navigate('TabNavigation')}>
                   <View style={styles.flagLayout}>
                     <Turkey style={styles.flagBody} />
                   </View>
-                </View>
+                </TouchableOpacity>
                 
-                <View style={styles.flagcell}>
+                <TouchableOpacity style={styles.flagcell} onPress={() => navigation.navigate('TabNavigation')}>
                   <View style={styles.flagLayout}>
                     <Turkey style={styles.flagBody} />
                   </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.flagcell}>
+                <TouchableOpacity style={styles.flagcell} onPress={() => navigation.navigate('TabNavigation')}>
                   <View style={styles.flagLayout}>
                     <Turkey style={styles.flagBody} />
                   </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.flagcell}>
+                <TouchableOpacity style={styles.flagcell} onPress={() => navigation.navigate('TabNavigation')}>
                   <View style={styles.flagLayout}>
                     <Turkey style={styles.flagBody} />
                   </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.flagcell}>
+                <TouchableOpacity style={styles.flagcell} onPress={() => navigation.navigate('TabNavigation')}>
                   <View style={styles.flagLayout}>
                     <Turkey style={styles.flagBody} />
                   </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.flagcell}>
+                <TouchableOpacity style={styles.flagcell} onPress={() => navigation.navigate('TabNavigation')}>
                   <View style={styles.flagLayout}>
                     <Turkey style={styles.flagBody} />
                   </View>
-                </View>
+                </TouchableOpacity>
 
-                <View style={styles.flagcell}>
+                <TouchableOpacity style={styles.flagcell} onPress={() => navigation.navigate('TabNavigation')}>
                   <View style={styles.flagLayout}>
                     <Turkey style={styles.flagBody} />
                   </View>
-                </View>
+                </TouchableOpacity>
 
               </View> 
 
