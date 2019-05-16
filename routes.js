@@ -35,7 +35,38 @@ const TabNavigation = createTabNavigator({
     },
   },
 
-});
+},
+{
+  tabBarOptions: {
+    activeTintColor: '#2A78E4',
+    inactiveTintColor: 'black',
+    activeBackgroundColor:'#95BCF2',
+    style:{
+      borderTopColor: 'grey',
+      backgroundColor:'#eee',  
+    },
+    labelStyle:{
+      paddingTop: 20,
+      fontSize: 13,
+      height: 50,
+      borderRightColor: 'black',
+      borderLeftColor: 'black',
+    },
+    tabStyle:{
+      paddingTop: 0,
+      borderRightColor: 'black',
+      borderLeftColor: 'black',
+
+    }
+    // activeTabStyle: {
+    //   backgroundColor: 'green',
+    //   borderBottomWidth: 4,
+    //   borderColor: '#6C1D7C',
+    //   paddingBottom: 18
+    // }
+  }
+}
+);
 
 const MainNavigator = createStackNavigator(
   {

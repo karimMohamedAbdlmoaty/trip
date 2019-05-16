@@ -3,7 +3,7 @@ import { StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'blue',
+    // backgroundColor: 'blue',
     
   },
   forHorizontalMargin:{
@@ -13,42 +13,64 @@ export const styles = StyleSheet.create({
   },
 
   auth:{
-    flex: 1,
-    backgroundColor: 'green',
+    flex: 2,
+    // backgroundColor: 'green',
     justifyContent: 'center',
     alignItems: 'center'
-
-
   },
   options:{
-    flex: 2,
-    backgroundColor: 'yellow',
-    borderBottomWidth: 1,
-    borderTopWidth: 1
-
+    flex: 4,
+    // backgroundColor: 'yellow',
+    borderBottomWidth: .5,
+    borderTopWidth: .5
   },
-  optionsCell:{
+  forVerticalMargin:{
+    flex: 1,
+    marginTop: 15,
+    marginBottom: 15
+  },
+  cell:{
     flex: 1,
     justifyContent: 'center',
-    borderBottomWidth: 1,
+    // borderBottomWidth: 1,
     flexDirection: 'row'
 
   },
-  optionsCellIcon:{
+  cellIcon:{
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center'
 
   },
-  optionsCellText:{
+  cellText:{
     flex: 6,
     justifyContent: 'center',
+  },
+  cellTextBody:{
+    color: '#2A78E4',
+    textDecorationLine: 'underline'
 
+  },
+  notifications:{
+    flex: 4,
+    justifyContent: 'center',
+  },
+  toggleButton:{
+    flex: 2,
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    // backgroundColor: 'brown',
+  },
+  toggleButtonBody:{
+    backgroundColor: '#2A78E4',
+    borderRadius: 17,
   },
   settings:{
-    flex: 3,
-    backgroundColor: 'brown'
-
+    flex: 7,
+    // backgroundColor: 'brown'
   },
+  clear:{
+    flex: 4,
+  }
 });
     

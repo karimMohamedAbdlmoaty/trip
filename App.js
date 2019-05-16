@@ -14,7 +14,6 @@ class App extends Component {
       <Provider store={store} style={{flex: 1}} >
         <Routes/>
         {/* <Account/> */}
-        {/* <RepoPage /> */}
       </Provider>
 
     );
