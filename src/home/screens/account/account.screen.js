@@ -9,7 +9,7 @@ import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 export class Account extends Component {
   render() {
     const authOptionsButtonStyles = {align:'center',backgroundColor: '#0071BF',marginLeft: 31 ,marginRight: 31 };
-    const authOptionsTextStyles = {color: 'white', fontWeight: '600',fontSize:15};
+    // const authOptionsTextStyles = {color: 'white', fontWeight: '600',fontSize:15};
     return (
       <View style={styles.container}>
         <View style={styles.forHorizontalMargin}>

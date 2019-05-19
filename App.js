@@ -6,14 +6,15 @@ import { Provider } from 'react-redux';
 import store from './src/store';
 import {Account} from './src/home/screens/account/account.screen';
 // import RepoPage from './src/repos/screens/repo-page/repo-page.screen';
-
+import {AuthOptions} from './src/auth/screens/auth-options/auth-options.screen';
 
 class App extends Component {
   render() {
     return (
       <Provider store={store} style={{flex: 1}} >
-        <Routes/>
+        {/* <Routes/> */}
         {/* <Account/> */}
+        <AuthOptions/>
       </Provider>
 
     );
